@@ -1,0 +1,66 @@
+⇒  gradle bootRun &
+[1] 34200
+⇒  > Configuring > 0/1 projects > root project > Resolving dependencies ':classpath:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:findMainClass
+:bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.2.RELEASE)
+
+2016-02-11 13:22:21.240  INFO 34285 --- [           main] co.masslab.SecbugApplication             : Starting SecbugApplication on zetes.local with PID 34285 (/Users/jason/Code/secbug/build/classes/main started by jason in /Users/jason/Code/secbug)
+2016-02-11 13:22:21.243  INFO 34285 --- [           main] co.masslab.SecbugApplication             : No active profile set, falling back to default profiles: default
+2016-02-11 13:22:21.284  INFO 34285 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2fd66ad3: startup date [Thu Feb 11 13:22:21 EST 2016]; root of context hierarchy
+2016-02-11 13:22:21.712  INFO 34285 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-02-11 13:22:22.163  INFO 34285 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-02-11 13:22:22.172  INFO 34285 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-02-11 13:22:22.173  INFO 34285 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-02-11 13:22:22.246  INFO 34285 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-02-11 13:22:22.246  INFO 34285 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 966 ms
+2016-02-11 13:22:22.488 DEBUG 34285 --- [ost-startStop-1] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=co.masslab.WebSecurityConfig$$EnhancerBySpringCGLIB$$4b942c34@412024b4}
+2016-02-11 13:22:22.498  INFO 34285 --- [ost-startStop-1] b.a.s.AuthenticationManagerConfiguration :
+
+Using default security password: 53ef4615-3ea8-4a5a-a5c1-168d9d5de118
+
+2016-02-11 13:22:22.536  INFO 34285 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-02-11 13:22:22.537  INFO 34285 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-02-11 13:22:22.537  INFO 34285 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-02-11 13:22:22.537  INFO 34285 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-02-11 13:22:22.538  INFO 34285 --- [ost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2016-02-11 13:22:22.538  INFO 34285 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'authFilter' to: [/*]
+2016-02-11 13:22:22.538  INFO 34285 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-02-11 13:22:22.620  INFO 34285 --- [ost-startStop-1] co.masslab.WebSecurityConfig             : Configuring AuthenticationManagerBuilder
+2016-02-11 13:22:22.649  INFO 34285 --- [ost-startStop-1] co.masslab.WebSecurityConfig             : Configuring HttpSecurity
+2016-02-11 13:22:22.692 DEBUG 34285 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_USER')', for Ant [pattern='/**']
+2016-02-11 13:22:22.698 DEBUG 34285 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2016-02-11 13:22:22.699 DEBUG 34285 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2016-02-11 13:22:22.702  INFO 34285 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66dd6111, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ec02567, co.masslab.AuthFilter@7023d6fa, org.springframework.security.web.header.HeaderWriterFilter@1eaacfc4, org.springframework.security.web.csrf.CsrfFilter@c9a2e03, org.springframework.security.web.authentication.logout.LogoutFilter@5e836cd7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@200dbc31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@472d8bb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3781b835, org.springframework.security.web.session.SessionManagementFilter@6ebd4b9, org.springframework.security.web.access.ExceptionTranslationFilter@61980c22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66328af0]
+2016-02-11 13:22:22.828  INFO 34285 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2fd66ad3: startup date [Thu Feb 11 13:22:21 EST 2016]; root of context hierarchy
+2016-02-11 13:22:22.875  INFO 34285 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/echo/{word}]}" onto public java.lang.String co.masslab.EchoController.echo(java.lang.String)
+2016-02-11 13:22:22.878  INFO 34285 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-02-11 13:22:22.878  INFO 34285 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-02-11 13:22:22.894  INFO 34285 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-02-11 13:22:22.894  INFO 34285 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-02-11 13:22:22.924  INFO 34285 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-02-11 13:22:23.006  INFO 34285 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-02-11 13:22:23.066  INFO 34285 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-02-11 13:22:23.070  INFO 34285 --- [           main] co.masslab.SecbugApplication             : Started SecbugApplication in 2.055 seconds (JVM running for 2.321)
+> Building 80% > :bootRun
+jason@zetes:~/Code/secbug|master⚡ ⇒  curl -H "Authorization: Bearer foo" http://localhost:8080/echo/hello
+2016-02-11 13:23:04.411  INFO 34285 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-02-11 13:23:04.411  INFO 34285 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-02-11 13:23:04.421  INFO 34285 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2016-02-11 13:23:04.431 DEBUG 34285 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /echo/hello at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2016-02-11 13:23:04.432 DEBUG 34285 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /echo/hello at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2016-02-11 13:23:04.433 DEBUG 34285 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /echo/hello at position 3 of 12 in additional filter chain; firing Filter: 'AuthFilter'
+2016-02-11 13:23:04.433  INFO 34285 --- [nio-8080-exec-1] co.masslab.AuthFilter                    : Looking at token: foo
+2016-02-11 13:23:04.435  INFO 34285 --- [nio-8080-exec-1] co.masslab.AuthFilter                    : auth failed: org.springframework.security.authentication.ProviderNotFoundException: No AuthenticationProvider found for co.masslab.AuthToken
+2016-02-11 13:23:04.435 DEBUG 34285 --- [nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+> Building 80% > :bootRun%
+⇒
